@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import homemImg from './img/homem.png'; // Importe a imagem do homem
-import mulherImg from './img/mulher.png'; // Importe a imagem da mulher
 
 const ContadorHM = () => {
   const [totalCount, setTotalCount] = useState(0);
@@ -26,7 +24,7 @@ const ContadorHM = () => {
       <div style={styles.peopleSection}>
         {/* Seção de Homens */}
         <div style={styles.section}>
-          <img src={homemImg} alt="Homem" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/homem.png`} alt="Homem" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setManCount(manCount + 1);
@@ -43,9 +41,8 @@ const ContadorHM = () => {
           <input type="text" value={manCount} readOnly style={styles.display} />
         </div>
 
-        {/* Seção de Mulheres */}
         <div style={styles.section}>
-          <img src={mulherImg} alt="Mulher" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/Mulher.png`} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setWomanCount(womanCount + 1);
@@ -71,14 +68,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#fff',
     padding: '40px',
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
     width: '300px',
-    height: '400px',
-    margin: 'auto',
   },
   totalSection: {
     display: 'flex',
