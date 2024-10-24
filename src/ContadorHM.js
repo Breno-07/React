@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ContadorHM = () => {
   const [totalCount, setTotalCount] = useState(0);
@@ -24,7 +24,7 @@ const ContadorHM = () => {
       <div style={styles.peopleSection}>
         {/* Seção de Homens */}
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}./homem.png`} alt="Homem" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/homem.png`} alt="Homem" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setManCount(manCount + 1);
@@ -42,7 +42,7 @@ const ContadorHM = () => {
         </div>
 
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}./mulher.png`} alt="Mulher" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/mulher.png`} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setWomanCount(womanCount + 1);
@@ -73,6 +73,8 @@ const styles = {
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
     width: '300px',
+    height: '100vh',
+    justifyContent: 'center',
   },
   totalSection: {
     display: 'flex',
@@ -144,4 +146,17 @@ const styles = {
   },
 };
 
-export default ContadorHM;
+const App = () => {
+  useEffect(() => {
+    document.body.style.display = 'flex';
+    document.body.style.alignItems = 'center';
+    document.body.style.justifyContent = 'center';
+    document.body.style.height = '100vh';
+    document.body.style.margin = '0';
+    document.body.style.backgroundColor = '#f4f4f9'; // Cor de fundo opcional
+  }, []);
+
+  return <ContadorHM />;
+};
+
+export default App;
