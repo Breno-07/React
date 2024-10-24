@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import homemImg from './img/homem.png'; // Importe a imagem do homem
+import mulherImg from './img/mulher.png'; // Importe a imagem da mulher
 
 const ContadorHM = () => {
   const [totalCount, setTotalCount] = useState(0);
@@ -24,7 +26,7 @@ const ContadorHM = () => {
       <div style={styles.peopleSection}>
         {/* Seção de Homens */}
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}/homem.png`} alt="Homem" style={styles.image} />
+          <img src={homemImg} alt="Homem" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setManCount(manCount + 1);
@@ -43,7 +45,7 @@ const ContadorHM = () => {
 
         {/* Seção de Mulheres */}
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}/mulher.png`} alt="Mulher" style={styles.image} />
+          <img src={mulherImg} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setWomanCount(womanCount + 1);
@@ -75,8 +77,8 @@ const styles = {
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
     width: '300px',
-    height: '400px', // Defina uma altura fixa
-    margin: 'auto', // Centralizar horizontalmente
+    height: '400px',
+    margin: 'auto',
   },
   totalSection: {
     display: 'flex',
@@ -148,23 +150,4 @@ const styles = {
   },
 };
 
-const App = () => {
-  return (
-    <div style={styles.appContainer}>
-      <ContadorHM />
-    </div>
-  );
-};
-
-const styles = {
-  appContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    margin: '0',
-    backgroundColor: '#f4f4f9', // Cor de fundo opcional
-  },
-};
-
-export default App;
+export default ContadorHM;
