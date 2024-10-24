@@ -24,7 +24,7 @@ const ContadorHM = () => {
       <div style={styles.peopleSection}>
         {/* Seção de Homens */}
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}../homem.png`} alt="Homem" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/homem.png`} alt="Homem" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setManCount(manCount + 1);
@@ -42,7 +42,7 @@ const ContadorHM = () => {
         </div>
 
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}../Mulher.png`} alt="Mulher" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/Mulher.png`} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setWomanCount(womanCount + 1);
