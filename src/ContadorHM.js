@@ -42,7 +42,7 @@ const ContadorHM = () => {
         </div>
 
         <div style={styles.section}>
-          <img src={`${process.env.PUBLIC_URL}/React-main/Mulher.png`} alt="Mulher" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/React-main/mulher.png`} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
             <button style={styles.addButton} onClick={() => {
               setWomanCount(womanCount + 1);
