@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const ContadorHM = () => {
   const [totalCount, setTotalCount] = useState(0);
@@ -41,6 +41,7 @@ const ContadorHM = () => {
           <input type="text" value={manCount} readOnly style={styles.display} />
         </div>
 
+        {/* Seção de Mulheres */}
         <div style={styles.section}>
           <img src={`${process.env.PUBLIC_URL}/mulher.png`} alt="Mulher" style={styles.image} />
           <div style={styles.buttonsContainer}>
@@ -68,13 +69,14 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
     padding: '40px',
     borderRadius: '10px',
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
     width: '300px',
-    height: '100vh',
-    justifyContent: 'center',
+    height: '400px', // Defina uma altura fixa
+    margin: 'auto', // Centralizar horizontalmente
   },
   totalSection: {
     display: 'flex',
@@ -147,16 +149,22 @@ const styles = {
 };
 
 const App = () => {
-  useEffect(() => {
-    document.body.style.display = 'flex';
-    document.body.style.alignItems = 'center';
-    document.body.style.justifyContent = 'center';
-    document.body.style.height = '100vh';
-    document.body.style.margin = '0';
-    document.body.style.backgroundColor = '#f4f4f9'; // Cor de fundo opcional
-  }, []);
+  return (
+    <div style={styles.appContainer}>
+      <ContadorHM />
+    </div>
+  );
+};
 
-  return <ContadorHM />;
+const styles = {
+  appContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    margin: '0',
+    backgroundColor: '#f4f4f9', // Cor de fundo opcional
+  },
 };
 
 export default App;
