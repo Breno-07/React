@@ -1,0 +1,17 @@
+p {
+    font-size: 1.1em;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-top: 1em;
+}
+
+ul li {
+    font-size: 1.2em;
+    list-style-type: none;
+    text-align: center;
+}
