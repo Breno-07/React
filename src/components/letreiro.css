@@ -1,0 +1,18 @@
+.letreiro-container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.letreiro {
+    color: white;
+    font-size: 10rem;
+    /* Letreiro extremamente grande */
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+}
