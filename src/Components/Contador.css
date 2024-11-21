@@ -1,0 +1,78 @@
+h3 {
+    font-size: 2em;
+}
+
+img {
+    width: 80%;
+    height: 40%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+img:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.Contador-container {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+
+.Pessoas-container {
+    display: flex;
+    max-width: 20em;
+    min-width: 20em;
+    height: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Pessoa {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Botoes-container {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+}
+
+.Botoes-container button {
+    width: 2em;
+    height: 2em;
+    box-sizing: border-box;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid rgb(97, 218, 251);
+    border-radius: 5px;
+}
+
+.Botao-adiciona {
+    background-color: rgba(97, 251, 97, 0.5);
+}
+
+.Botao-adiciona:hover {
+    background-color: rgba(97, 251, 97, 1);
+    cursor: pointer;
+}
+
+.Botao-remove {
+    background-color: rgba(251, 97, 97, 0.5);
+}
+
+.Botao-remove:hover {
+    background-color: rgba(251, 97, 97, 1);
+    cursor: pointer;
+}
+
+.Exibe-contagem {
+    font-size: 2em;
+}

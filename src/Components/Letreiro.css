@@ -1,0 +1,16 @@
+.Letreiro {
+    display: flex;
+    width: 100vw;
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+#letreiro {
+    width: 10em;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+    border: solid 3px rgb(97, 218, 251);
+}

@@ -1,15 +1,14 @@
-import React from "react";
+import Contador from './Components/Contador';
 import { Link } from "react-router-dom";
-import ContadorHM from "./ContadorHM"; 
+import './Atv.css';
 
-const Atv02 = () => {
+export default function Atv01() {
     return (
-        <div>
+        <>
             <h1>Atividade 02</h1>
-            <ContadorHM />  
-            <Link to="/">Voltar para a Home</Link>
-        </div>
+            <Contador />
+            <br />
+            <Link to="/">&#129144; retornar à página inicial</Link>
+        </>
     );
 }
-
-export default Atv02;

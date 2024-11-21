@@ -1,0 +1,11 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 20em;
+    margin: 2em 0 2em 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 10px;
+}
