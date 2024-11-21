@@ -6,7 +6,7 @@ import Atv03 from "./Atv03";
 import Atv04 from "./Atv04";
 
 
-export default function MinhasRotas() {
+export default function minhasRotas() {
     return (
         <BrowserRouter>
             <Routes>
