@@ -40,7 +40,7 @@ p {
 }
 
 .link-button:hover {
-    background-color: #005bb5;
+    background-color: #4a5153;
     color: white;
     transform: scale(1.05);
 }
