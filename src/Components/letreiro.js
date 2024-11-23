@@ -23,7 +23,7 @@ const Letreiro = () => {
     return (
         <div className="letreiro-container">
             <div className="letreiro" ref={letreiroRef}>
-                Seja Bem vindo à Fatec De Presidente Prudente
+                Bem vindo à Fatec Presidente Prudente
             </div>
         </div>
     );

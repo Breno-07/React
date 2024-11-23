@@ -19,18 +19,20 @@ const Contador = () => {
             <div className="fundo-estrelas"></div>
 
             <div className="retangulo-central">
+                {/* Botão Resetar */}
                 <button className="reset-button" onClick={resetar}>
                     <FiRefreshCcw size={28} />
                 </button>
 
+                {/* Total */}
                 <div className="total-container">
                     <p className="label-total">Total</p>
                     <div className="total-caixinha">{homens + mulheres}</div>
                 </div>
 
+                {/* Contadores */}
                 <div className="contadores">
-
-
+                    {/* Contador de Homens */}
                     <div className="contador">
                         <img src={homemImg} alt="Homem" />
                         <p className="label">Homens</p>
@@ -51,6 +53,7 @@ const Contador = () => {
                         </div>
                     </div>
 
+                    {/* Contador de Mulheres */}
                     <div className="contador">
                         <img src={mulherImg} alt="Mulher" />
                         <p className="label">Mulheres</p>
