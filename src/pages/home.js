@@ -20,9 +20,7 @@ export default function Home() {
                 <Link to="/atividade4" className="link-button">
                     Atividade 4 - Componentes
                 </Link>
-                <Link to="/atividade5" className="link-button">
-                    Atividade 5 - Interatividade
-                </Link>
+                
             </div>
             <div style={{ marginTop: "20px", textAlign: "left" }}>
                 <a

@@ -1,0 +1,17 @@
+.letreiro-container {
+    background-color: rgb(199, 24, 24);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.letreiro {
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+}

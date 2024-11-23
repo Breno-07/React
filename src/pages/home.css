@@ -6,7 +6,7 @@
     text-align: center;
     padding: 20px;
     min-height: 100vh;
-    background: linear-gradient(135deg, #0078d7, #80d8ff);
+    background: linear-gradient(135deg, #d87c13, #e9c811);
     /* Fundo gradiente */
     color: white;
 }
@@ -30,7 +30,7 @@ p {
 
 .link-button {
     background-color: white;
-    color: #0078d7;
+    color: rgb(224, 129, 51);
     text-decoration: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -41,7 +41,7 @@ p {
 }
 
 .link-button:hover {
-    background-color: #005bb5;
+    background-color: #eb9627;
     color: white;
     transform: scale(1.05);
 }
