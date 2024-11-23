@@ -1,0 +1,174 @@
+.pagina {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.fundo-estrelas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(white, transparent 70%);
+    background-size: 10px 10px;
+    animation: estrelas 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes estrelas {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.retangulo-central {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.reset-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.reset-button:hover {
+    color: #fdf902;
+}
+
+/* Total */
+.total-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.total-caixinha {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+/* Contadores */
+.contadores {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+    height: 267px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.numero-container {
+    background-color: #fdf902;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao.mais {
+    width: 70px;
+    height: 70px;
+    background-color: #28a745;
+}
+
+.botao.mais:hover {
+    background-color: #218838;
+}
+
+.botao.menos {
+    width: 60px;
+    height: 60px;
+    background-color: #dc3545;
+}
+
+.botao.menos:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 1024px) {
+    .retangulo-central {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 768px) {
+    .retangulo-central {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .retangulo-central {
+        transform: scale(0.7);
+    }
+}
