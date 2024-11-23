@@ -54,7 +54,7 @@
 }
 
 .reset-button:hover {
-    color: #fdf902;
+    color: #f5f4de;
 }
 
 /* Total */
@@ -108,7 +108,7 @@ img {
 }
 
 .numero-container {
-    background-color: #fdf902;
+    background-color: #fafae9;
     color: white;
     padding: 10px 20px;
     font-size: 1.5rem;
