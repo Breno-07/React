@@ -5,8 +5,7 @@ import "./home.css";
 export default function Home() {
     return (
         <div className="home-container">
-            <h1>Bem-vindo ao Projeto React</h1>
-            <p>Escolha uma das atividades abaixo para explorar exemplos de React:</p>
+            <h1>Projeto React</h1>
             <div className="links-container">
                 <Link to="/atividade1" className="link-button">
                     Atividade 1 - Letreiro
