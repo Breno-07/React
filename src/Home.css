@@ -6,8 +6,7 @@
     text-align: center;
     padding: 20px;
     min-height: 100vh;
-    background: linear-gradient(135deg, #0078d7, #80d8ff);
-    /* Fundo gradiente */
+    background: linear-gradient(135deg, #94a3af, #4a5153);
     color: white;
 }
 
@@ -30,7 +29,7 @@ p {
 
 .link-button {
     background-color: white;
-    color: #0078d7;
+    color: #94a3af;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 1rem;
